@@ -18,7 +18,7 @@ The segfault typically occurs inside `curl::curl_fetch_disk()`.
 library(httr)
 
 url1 <- "https://en.wikipedia.org/wiki/Bioconductor"
-response1 <- GET(url1, write_disk(tempfile()))
+response1 <- GET(url1)
 
 url2 <- "ftp://ftp.ensembl.org/pub/release-71/gtf/caenorhabditis_elegans/Caenorhabditis_elegans.WBcel235.71.gtf.gz"
 response2a <- GET(url2, write_disk(tempfile()))
