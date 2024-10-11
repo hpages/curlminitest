@@ -1,8 +1,9 @@
 Package: curlminitest
 Title: Reproduce curl/httr segfault on Ubuntu 24.04
 Description: Mimimalist package with only a small vignette that
-	triggers the curl segfault during R CMD build. The segfault
-	typically occurs inside curl::curl_fetch_disk().
+	triggers a curl segfault during R CMD build on Ubuntu 24.04
+	and Intel Mac. The segfault typically occurs inside
+	curl::curl_fetch_disk().
 Version: 0.0.0
 License: Artistic-2.0
 Encoding: UTF-8

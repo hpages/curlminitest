@@ -1,5 +1,5 @@
 ---
-title: "Triggers the curl/httr segfault during R CMD build"
+title: "Triggers a curl/httr segfault during R CMD build"
 author: Hervé Pagès
 output:
   BiocStyle::html_document:
@@ -10,9 +10,9 @@ vignette: >
     %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, echo=FALSE}
-knitr::opts_chunk$set(collapse=TRUE)
-```
+This vignette triggers a curl segfault when built with
+`R CMD build curlminitest` on Ubuntu 24.04 and Intel Mac.
+The segfault typically occurs inside `curl::curl_fetch_disk()`.
 
 ```{r}
 library(httr)
